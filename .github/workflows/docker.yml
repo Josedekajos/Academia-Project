@@ -24,8 +24,9 @@ jobs:
       # Build the Docker image
       - name: Build Docker image
         run: |
-          docker build -t myusername/my-repo-name:$GITHUB_SHA .
-          docker tag myusername/my-repo-name:$GITHUB_SHA myusername/my-repo-name:latest
+          docker build -t josedekajos/academia-project:$GITHUB_SHA .
+          docker tag josedekajos/academia-project:$GITHUB_SHA josedekajos/academia-project:latest
+
 
       # Push the Docker image to Docker Hub
       - name: Push Docker image
