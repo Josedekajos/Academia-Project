@@ -41,11 +41,11 @@ export default function Home() {
           <h2 className="text-3xl font-bold text-center mb-8">What People Say About Us</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             <div className="bg-white p-6 rounded-lg shadow-md">
-              <p className="mb-4">"Academia has transformed my study habits. The collaborative environment and expert guidance have significantly improved my grades."</p>
+              <p className="mb-4">&quot;Academia has transformed my study habits. The collaborative environment and expert guidance have significantly improved my grades.&quot;</p>
               <p className="font-semibold">- Sarah J., Computer Science Student</p>
             </div>
             <div className="bg-white p-6 rounded-lg shadow-md">
-              <p className="mb-4">"I love the flexibility Academia offers. It allows me to balance my studies with my part-time job effectively."</p>
+              <p className="mb-4">&quot;I love the flexibility Academia offers. It allows me to balance my studies with my part-time job effectively.&quot;</p>
               <p className="font-semibold">- Mike T., Business Major</p>
             </div>
           </div>
@@ -101,4 +101,3 @@ export default function Home() {
     </div>
   )
 }
-
