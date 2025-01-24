@@ -5,7 +5,7 @@ import Link from "next/link"
 import { motion } from "framer-motion"
 
 export default function Dashboard() {
-  const [user, setUser] = useState({
+  const [user] = useState({
     name: "John Doe",
     email: "john@example.com",
   })
@@ -18,11 +18,13 @@ export default function Dashboard() {
 
   const [newTask, setNewTask] = useState("")
 
-  const [groups, setGroups] = useState([
+  const [groups] = useState([
     { id: 1, name: "Math Study Group" },
     { id: 2, name: "History Discussion Club" },
     { id: 3, name: "Science Enthusiasts" },
   ])
+
+    
 
   const handleLogout = () => {
     // TODO: Implement logout logic
