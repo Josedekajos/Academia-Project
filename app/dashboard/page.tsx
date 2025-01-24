@@ -112,9 +112,13 @@ export default function Dashboard() {
             <ul className="space-y-2">
               {groups.map((group) => (
                 <motion.li key={group.id} whileHover={{ scale: 1.02 }}>
-                  <Link href={`/groups/${group.id}`} className="text-purple-600 hover:underline">
-                    {group.name}
-                  </Link>
+                  <motion.div whileHover={{ scale: 1.05 }}>
+                    <Link href={`/groups/${group.id}`} passHref>
+                      <a className="text-purple-600 hover:underline">
+                        {group.name}
+                      </a>
+                    </Link>
+                  </motion.div>
                 </motion.li>
               ))}
             </ul>
@@ -136,4 +140,3 @@ export default function Dashboard() {
     </div>
   )
 }
-
